@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaximumUsingGenerics", "FindMaximumUsingGenerics.csproj", "{453D8D0F-723F-4A4C-ADB0-1C31B7303FA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindMaximumUsingGenerics", "FindMaximumUsingGenerics.csproj", "{453D8D0F-723F-4A4C-ADB0-1C31B7303FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberTesting", "..\MaximumNumberTesting\MaximumNumberTesting.csproj", "{27EAC05F-BB99-4B78-BB89-5ACD0FD478AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{453D8D0F-723F-4A4C-ADB0-1C31B7303FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{453D8D0F-723F-4A4C-ADB0-1C31B7303FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{453D8D0F-723F-4A4C-ADB0-1C31B7303FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EAC05F-BB99-4B78-BB89-5ACD0FD478AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EAC05F-BB99-4B78-BB89-5ACD0FD478AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EAC05F-BB99-4B78-BB89-5ACD0FD478AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EAC05F-BB99-4B78-BB89-5ACD0FD478AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
