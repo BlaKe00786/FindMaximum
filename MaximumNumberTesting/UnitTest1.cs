@@ -6,24 +6,23 @@ namespace MaximumNumberTesting
     public class UnitTest1
     {
         [TestMethod]
-        [DataRow(3,2,1)]
-        [DataRow(1,3,2)]
-        [DataRow(1,2,3)]
-        public void MaximumIntegerGivenAtDifferentPositions(int first, int second,int third)
+        public void TestMaximum()
         {
-            int expected = 3;
-            int output=MaximumNumberCheck.MaximumIntegerNumber(first, second, third);
-            Assert.AreEqual(expected, output);
-        }
-        [TestMethod]
-        [DataRow(3.3, 2.2, 1.1)]
-        [DataRow(1.1, 3.3, 2.2)]
-        [DataRow(1.1, 2.2, 3.3)]
-        public void MaximumFloatGivenAtDifferentPositions(double first, double second, double third)
-        {
-            double expected = 3.3;
-            double output = MaximumNumberCheck.MaximumFloatNumber(first, second, third);
-            Assert.AreEqual(expected, output);
+            int expectedInt= 4;
+            double expectedDouble = 4.4;
+            string expectedString = "333";
+            int[] intArray = { 1, 2, 3, 4 };
+            GenericMaximum<int> generic = new GenericMaximum<int>(intArray);
+            int outputInt = generic.PrintMaxValue();
+            double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
+            GenericMaximum<double> genericDouble = new GenericMaximum<double>(doubleArray);
+            double outputDouble = genericDouble.PrintMaxValue();
+            string[] stringArray = { "111", "222", "333" };
+            GenericMaximum<string> genericString = new GenericMaximum<string>(stringArray);
+            string outputString = genericString.PrintMaxValue();
+            Assert.AreEqual(expectedInt,outputInt);
+            Assert.AreEqual(expectedDouble,outputDouble);
+            Assert.AreEqual(expectedString,outputString);
         }
     }
 }
